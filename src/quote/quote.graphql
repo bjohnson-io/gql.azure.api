@@ -1,0 +1,32 @@
+type Quote {
+  RowKey: ID
+  source: String
+  quote: String
+}
+
+input CreateQuoteInput {
+  source: String!
+  quote: String!
+}
+
+input UpdateQuoteInput {
+  source: String
+  quote: String
+}
+
+type Query {
+  listQuotes: [Quote]!
+  getQuote(RowKey: ID!): Quote
+}
+
+type Mutation {
+  createQuote(input: CreateQuoteInput!): Quote
+  updateQuote(RowKey: ID!, input: UpdateQuoteInput!): Quote
+  deleteQuote(RowKey: ID!): Quote
+}
+
+type Subscription {
+  quoteCreated: Quote!
+  quoteDeleted: Quote!
+  quoteUpdated: Quote!
+}
