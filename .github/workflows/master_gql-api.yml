@@ -20,10 +20,10 @@ jobs:
         node-version: '14.x'
     - name: npm install, build, and test
       run: |
-        npm i -g yarn ts-node typescript
-        yarn install --ignore-optional
+        npm i -g ts-node typescript
+        npm install --ignore-optional
         ts-node gen-gql-types
-        yarn build
+        npm run build
       #  yarn run test
     # - name: Upload artifact for deployment job
     #   uses: actions/upload-artifact@v2
