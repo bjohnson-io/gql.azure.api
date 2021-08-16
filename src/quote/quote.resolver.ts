@@ -1,7 +1,7 @@
 import { Resolver, Query, Mutation, Args, Subscription } from '@nestjs/graphql';
 import { QuoteService } from './quote.service';
 import { Quote } from './quote.entity';
-import { CreateQuoteInput } from '../graphql';
+import { CreateQuoteInput } from 'src/graphql';
 import { PubSub } from 'graphql-subscriptions';
 
 @Resolver()
