@@ -1,0 +1,8 @@
+{
+  "appService.zipIgnorePattern": [
+    "node_modules{,/**}",
+    ".vscode{,/**}"
+  ],
+  "appService.defaultWebAppToDeploy": "/subscriptions/08d894d8-5ac0-47d9-a0d1-05aeac1f0a22/resourceGroups/YouTubeTutorial-RG/providers/Microsoft.Web/sites/gql-api",
+  "appService.deploySubpath": "."
+}
